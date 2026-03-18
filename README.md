@@ -1,4 +1,4 @@
-# pressoth-rapie-saint-juery
+# pressotherapie-saint-juery
 Page de présentation de la pressothérapie pour une mise en avant optimal et optimisé responsive 
 # 🌿 Pressothérapie à Saint‑Juery | Bien‑être, Drainage & Récupération – Proche d’Albi
 
