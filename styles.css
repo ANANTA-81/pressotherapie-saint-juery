@@ -1,14 +1,16 @@
 :root {
-  --bg: #F7F5F0; /* fond clair zen */
-  --bg-soft: #E8E2D0; /* beige doux */
-  --surface: rgba(221, 231, 210, 0.85); /* vert sauge très doux */
-  --surface-strong: #A8C3A0; /* vert eucalyptus */
-  --text: #333333; /* texte anthracite */
-  --muted: #666666; /* texte secondaire */
-  --gold: #6BB7C7; /* bleu doux (accent) */
-  --gold-strong: #6BB7C7; /* même accent */
-  --line: rgba(168, 195, 160, 0.35); /* ligne eucalyptus */
-  --shadow: 0 20px 50px rgba(0, 0, 0, 0.12); /* ombre douce */
+  --bg: #F7F5F0; /* blanc cassé */
+  --bg-soft: #E8E2D0; /* beige sable */
+  --surface: #DDE7D2; /* vert sauge clair */
+  --surface-strong: #A8C3A0; /* eucalyptus */
+  --accent: #8FAF8B; /* vert naturel doux (remplace le bleu) */
+  --accent-strong: #5F7F63; /* vert plus profond */
+  --text: #333333;
+  --muted: #666666;
+  --line: rgba(168, 195, 160, 0.35);
+  --wood: #C8A97E; /* bois chaud (inspiré de ta table) */
+  --warm: #D8B75B; /* jaune doux coussin */
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
   --radius-xl: 32px;
   --radius-lg: 24px;
   --radius-md: 18px;
@@ -242,7 +244,7 @@ p {
   border-radius: 999px;
   text-decoration: none;
   color: #090909;
-  background: linear-gradient(135deg, var(--gold-strong), var(--gold));
+  background: linear-gradient(135deg, var(--surface-strong), var(--surface));
   font-weight: 700;
   border: 1px solid transparent;
   box-shadow: 0 20px 35px rgba(212, 175, 104, 0.18);
