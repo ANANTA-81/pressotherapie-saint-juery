@@ -141,7 +141,7 @@ a {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  var(--accent-strong);
+  color: var(--accent-strong);
 }
 
 .nav-toggle {
@@ -212,7 +212,6 @@ h3 {
 p {
   margin: 0;
   color: var(--text);
-}
   line-height: 1.75;
 }
 
@@ -298,7 +297,10 @@ p {
 .faq-item,
 .cta-card,
 .local-grid {
- background: rgba(255, 255, 255, 0.6);
+ background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.7),
+  rgba(221, 231, 210, 0.5);
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -373,7 +375,7 @@ p {
 .feature-icon {
   display: inline-flex;
   margin-bottom: 1.3rem;
-  var(--accent-strong);
+  color: var(--accent-strong);
   font-size: 0.85rem;
   letter-spacing: 0.22em;
 }
@@ -416,7 +418,7 @@ p {
   aspect-ratio: 1;
   border-radius: 50%;
   color: #090909;
-  background: linear-gradient(135deg, var(--accent-strong);
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
   font-weight: 700;
 }
 
@@ -541,7 +543,7 @@ p {
     align-items: flex-start;
     padding: 1rem;
     border-radius: 22px;
-    background: rgba(15, 15, 15, 0.98);
+    background: rgba(247, 245, 240, 0.98);
     border: 1px solid rgba(168, 195, 160, 0.35);
 
     box-shadow: var(--shadow);
