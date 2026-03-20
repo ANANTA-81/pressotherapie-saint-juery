@@ -1,19 +1,20 @@
 :root {
-  --bg: #090909;
-  --bg-soft: #111111;
-  --surface: rgba(20, 20, 20, 0.78);
-  --surface-strong: #171717;
-  --text: #f7f2e8;
-  --muted: #c8bba1;
-  --gold: #d4af68;
-  --gold-strong: #f0cf88;
-  --line: rgba(212, 175, 104, 0.18);
-  --shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+  --bg: #F7F5F0; /* fond clair zen */
+  --bg-soft: #E8E2D0; /* beige doux */
+  --surface: rgba(221, 231, 210, 0.85); /* vert sauge très doux */
+  --surface-strong: #A8C3A0; /* vert eucalyptus */
+  --text: #333333; /* texte anthracite */
+  --muted: #666666; /* texte secondaire */
+  --gold: #6BB7C7; /* bleu doux (accent) */
+  --gold-strong: #6BB7C7; /* même accent */
+  --line: rgba(168, 195, 160, 0.35); /* ligne eucalyptus */
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.12); /* ombre douce */
   --radius-xl: 32px;
   --radius-lg: 24px;
   --radius-md: 18px;
   --container: min(1160px, calc(100% - 2rem));
 }
+
 
 * {
   box-sizing: border-box;
@@ -28,10 +29,10 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(212, 175, 104, 0.14), transparent 28%),
-    radial-gradient(circle at 80% 15%, rgba(255, 216, 140, 0.12), transparent 24%),
-    linear-gradient(180deg, #070707 0%, #0c0c0c 50%, #090909 100%);
+ background:
+  radial-gradient(circle at top left, rgba(168, 195, 160, 0.15), transparent 40%),
+  radial-gradient(circle at 80% 15%, rgba(107, 183, 199, 0.12), transparent 40%),
+  linear-gradient(180deg, #F7F5F0 0%, #E8E2D0 100%);
 }
 
 body::before {
@@ -75,7 +76,8 @@ a {
   z-index: 40;
   backdrop-filter: blur(18px);
   background: rgba(9, 9, 9, 0.75);
-  border-bottom: 1px solid rgba(212, 175, 104, 0.12);
+  border: 1px solid rgba(168, 195, 160, 0.35);
+
 }
 
 .nav {
@@ -118,7 +120,7 @@ a {
   width: 3rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 1px solid rgba(212, 175, 104, 0.4);
+  border: 1px solid rgba(168, 195, 160, 0.35);
   color: var(--gold-strong);
   box-shadow: inset 0 0 0 6px rgba(212, 175, 104, 0.08);
 }
@@ -255,7 +257,7 @@ p {
 .button-ghost {
   color: var(--text);
   background: transparent;
-  border-color: rgba(212, 175, 104, 0.35);
+  border: 1px solid rgba(168, 195, 160, 0.35);
   box-shadow: none;
 }
 
@@ -268,7 +270,8 @@ p {
 
 .hero-highlights li {
   padding: 0.7rem 1rem;
-  border: 1px solid rgba(212, 175, 104, 0.18);
+  border: 1px solid rgba(168, 195, 160, 0.35);
+
   border-radius: 999px;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.02);
@@ -320,7 +323,8 @@ p {
   padding: 1rem;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(212, 175, 104, 0.1);
+  border: 1px solid rgba(168, 195, 160, 0.35);
+
 }
 
 .stats strong {
@@ -338,7 +342,8 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1.2rem;
-  border: 1px solid rgba(212, 175, 104, 0.14);
+ border: 1px solid rgba(168, 195, 160, 0.35);
+
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.02);
 }
@@ -396,7 +401,8 @@ p {
   gap: 1rem;
   padding: 1.15rem;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(212, 175, 104, 0.14);
+  border: 1px solid rgba(168, 195, 160, 0.35);
+
   background: rgba(255, 255, 255, 0.02);
 }
 
@@ -533,7 +539,8 @@ p {
     padding: 1rem;
     border-radius: 22px;
     background: rgba(15, 15, 15, 0.98);
-    border: 1px solid rgba(212, 175, 104, 0.18);
+    border: 1px solid rgba(168, 195, 160, 0.35);
+
     box-shadow: var(--shadow);
   }
 
