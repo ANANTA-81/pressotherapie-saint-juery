@@ -371,8 +371,12 @@ p {
 }
 
 .section-dark {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(212, 175, 104, 0.05));
-  border-block: 1px solid rgba(212, 175, 104, 0.08);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(168, 195, 160, 0.15) /* vert sauge */
+  );
+  border-block: 1px solid rgba(168, 195, 160, 0.25);
 }
 
 .experience-grid {
