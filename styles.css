@@ -31,10 +31,11 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   color: var(--text);
- background:
-  radial-gradient(circle at top left, rgba(168, 195, 160, 0.15), transparent 40%),
-  radial-gradient(circle at 80% 15%, rgba(107, 183, 199, 0.12), transparent 40%),
-  linear-gradient(180deg, #F7F5F0 0%, #E8E2D0 100%);
+  background:
+    radial-gradient(circle at top left, rgba(168, 195, 160, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 15%, rgba(143, 175, 139, 0.12), transparent 40%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+
 }
 
 body::before {
@@ -44,7 +45,7 @@ body::before {
   pointer-events: none;
   background:
     linear-gradient(120deg, rgba(255, 255, 255, 0.03), transparent 20%),
-    radial-gradient(circle at center, rgba(212, 175, 104, 0.08), transparent 55%);
+    radial-gradient(circle at center, rgba(168, 195, 160, 0.2), transparent 55%);
   opacity: 0.7;
 }
 
@@ -77,9 +78,8 @@ a {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(18px);
-  background: rgba(9, 9, 9, 0.75);
-  border: 1px solid rgba(168, 195, 160, 0.35);
-
+  background: rgba(247, 245, 240, 0.85);
+  border-bottom: 1px solid var(--line);
 }
 
 .nav {
@@ -123,8 +123,8 @@ a {
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid rgba(168, 195, 160, 0.35);
-  color: var(--gold-strong);
-  box-shadow: inset 0 0 0 6px rgba(212, 175, 104, 0.08);
+  color: var(--accent-strong);
+  box-shadow: inset 0 0 0 6px rgba(168, 195, 160, 0.2);
 }
 
 .nav-links {
@@ -141,7 +141,7 @@ a {
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
-  color: var(--gold-strong);
+  var(--accent-strong);
 }
 
 .nav-toggle {
@@ -156,7 +156,7 @@ a {
   width: 28px;
   height: 2px;
   margin: 6px 0;
-  background: var(--gold-strong);
+  background: var(--accent-strong);
 }
 
 .hero {
@@ -179,7 +179,7 @@ a {
 
 .eyebrow {
   margin: 0 0 1rem;
-  color: var(--gold-strong);
+  color: var(--accent-strong);
   letter-spacing: 0.25em;
   text-transform: uppercase;
   font-size: 0.78rem;
@@ -243,11 +243,11 @@ p {
   padding: 0.95rem 1.4rem;
   border-radius: 999px;
   text-decoration: none;
-  color: #090909;
-  background: linear-gradient(135deg, var(--surface-strong), var(--surface));
+  color: white;
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
   font-weight: 700;
   border: 1px solid transparent;
-  box-shadow: 0 20px 35px rgba(212, 175, 104, 0.18);
+  box-shadow: 0 20px 35px rgba(168, 195, 160, 0.2);
 }
 
 .button:hover,
@@ -297,7 +297,7 @@ p {
 .faq-item,
 .cta-card,
 .local-grid {
-  background: linear-gradient(180deg, rgba(24, 24, 24, 0.92), rgba(12, 12, 12, 0.86));
+ background: rgba(255, 255, 255, 0.6);
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -332,7 +332,7 @@ p {
 .stats strong {
   display: block;
   font-size: 2rem;
-  color: var(--gold-strong);
+  color: var(--accent-strong);
   margin-bottom: 0.25rem;
 }
 
@@ -372,7 +372,7 @@ p {
 .feature-icon {
   display: inline-flex;
   margin-bottom: 1.3rem;
-  color: var(--gold-strong);
+  var(--accent-strong);
   font-size: 0.85rem;
   letter-spacing: 0.22em;
 }
@@ -415,7 +415,7 @@ p {
   aspect-ratio: 1;
   border-radius: 50%;
   color: #090909;
-  background: linear-gradient(135deg, var(--gold-strong), var(--gold));
+  background: linear-gradient(135deg, var(--accent-strong);
   font-weight: 700;
 }
 
@@ -427,7 +427,7 @@ p {
 .quote-mark {
   font-family: "Cormorant Garamond", serif;
   font-size: 8rem;
-  color: rgba(212, 175, 104, 0.18);
+  color: rgba(168, 195, 160, 0.2);
   line-height: 0.8;
 }
 
