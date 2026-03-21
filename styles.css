@@ -503,6 +503,69 @@ p {
   transition-delay: 0.15s;
 }
 
+}
+.reviews-section {
+  text-align: center;
+}
+
+.section-heading.center {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+/* =========================
+   SECTION AVIS
+========================= */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.review-card {
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f7f5f0 100%
+  );
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  text-align: left;
+  position: relative;
+}
+
+.review-card.highlight {
+  transform: scale(1.03);
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.review-footer {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-author {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.review-stars {
+  color: var(--warm);
+  letter-spacing: 0.1em;
+}
+
+.reviews-cta {
+  margin-top: 3rem;
+}
+
 @media (max-width: 1024px) {
   .hero-grid,
   .experience-grid,
@@ -589,66 +652,7 @@ p {
   .cta-card {
     justify-items: stretch;
   }
-}
-.reviews-section {
-  text-align: center;
-}
 
-.section-heading.center {
-  max-width: 600px;
-  margin: 0 auto 3rem;
-}
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.review-card {
-  padding: 1.8rem;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f7f5f0 100%
-  );
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  text-align: left;
-  position: relative;
-}
-
-.review-card.highlight {
-  transform: scale(1.03);
-}
-
-.review-text {
-  font-style: italic;
-  line-height: 1.7;
-  color: var(--text);
-}
-
-.review-footer {
-  margin-top: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.review-author {
-  font-weight: 600;
-  color: var(--text);
-}
-
-.review-stars {
-  color: var(--warm);
-  letter-spacing: 0.1em;
-}
-
-.reviews-cta {
-  margin-top: 3rem;
-}
 
 @media (max-width: 768px) {
   .reviews-grid {
