@@ -291,7 +291,6 @@ p {
 }
 
 .hero-card-inner,
-.feature-card,
 .quote-card,
 .audience-card,
 .faq-item,
@@ -300,7 +299,8 @@ p {
  background: linear-gradient(
   180deg,
   rgba(255, 255, 255, 0.7),
-  rgba(221, 231, 210, 0.5);
+  rgba(221, 231, 210, 0.5)
+);
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -523,7 +523,13 @@ p {
     max-width: 720px;
   }
 }
-
+.feature-card {
+  padding: 1.6rem;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
 @media (max-width: 760px) {
   .section {
     padding: 4.2rem 0;
