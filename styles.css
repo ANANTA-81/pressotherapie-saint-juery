@@ -219,7 +219,9 @@ p {
 .section-heading p {
   max-width: 62ch;
 }
-
+.hero-text {
+  margin-top: 1.5rem;
+}
 .hero-actions,
 .hero-highlights,
 .stats,
