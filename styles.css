@@ -567,7 +567,7 @@ p {
 }
 .review-stars {
   color: #FFD700; /* or "yellow" */
-  font-size: 1.5rem; /* optionnel, pour agrandir les étoiles */
+  font-size: 3rem; /* optionnel, pour agrandir les étoiles */
 }
 
 
